@@ -7,7 +7,6 @@
 
 #include "include/list.h"
 
-
 /**
  * @brief Insert a new node with the given data after the specified node in the
  *          list.
