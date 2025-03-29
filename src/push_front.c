@@ -13,12 +13,13 @@
  * @param list The linked list to which the node will be added.
  * @param data The data to be stored in the new node.
  */
-void push_front(List *list, void *data)
+void push_front(list_t *list_t, void *data)
 {
-    Node *new_node = create_node(data);
+    node_t *new_node = create_node(data);
+
     if (new_node == NULL)
         return;
-    new_node->next = list->head;
-    list->head = new_node;
-    list->size++;
+    new_node->next = list_t->head;
+    list_t->head = new_node;
+    list_t->size++;
 }

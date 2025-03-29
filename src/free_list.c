@@ -15,15 +15,15 @@
  *
  * @param list The linked list to be freed.
  */
-void free_list(List *list)
+void free_list(list_t *list_t)
 {
-    Node *current = list->head;
-    Node *next_node;
+    node_t *current = list_t->head;
+    node_t *next_node;
 
     while (current != NULL) {
         next_node = current->next;
         free(current);
         current = next_node;
     }
-    free(list);
+    free(list_t);
 }

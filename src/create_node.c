@@ -13,12 +13,13 @@
  * @param data The data to be stored in the node (often another structure).
  * @return A pointer to the newly created node, NULL if allocation fails.
  */
-Node *create_node(void *data)
+node_t *create_node(void *data)
 {
-    Node *node = malloc(sizeof(Node));
-    if (node == NULL)
+    node_t *node_t = malloc(sizeof(node_t));
+
+    if (node_t == NULL)
         return NULL;
-    node->data = data;
-    node->next = NULL;
-    return node;
+    node_t->data = data;
+    node_t->next = NULL;
+    return node_t;
 }

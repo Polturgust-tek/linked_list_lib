@@ -11,21 +11,22 @@
     #include <stdlib.h>
     #include <string.h>
 
-typedef struct Node {
+typedef struct node {
     void *data;
-    struct Node *next;
-} Node;
+    struct node_t *next;
+} node_t;
 
-typedef struct List {
-    Node *head;
+typedef struct list_t {
+    node_t *head;
     int size;
-} List;
+} list_t;
 
-List* create_list(void);
-Node* create_node(void *data);
-void free_list(List *list);
-void push_back(List *list, void *data);
-void push_front(List *list, void *data);
+list_t* create_list(void);
+node_t* create_node(void *data);
+void free_list(list_t *list_t);
+void push_back(list_t *list_t, void *data);
+void push_front(list_t *list_t, void *data);
+int insert_at(list_t *list_t, int index, void *data);
 
 
 #endif /* LINKED_LIST_H */
