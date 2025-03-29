@@ -27,6 +27,7 @@ void free_list(list_t *list_t);
 void push_back(list_t *list_t, void *data);
 void push_front(list_t *list_t, void *data);
 int insert_at(list_t *list_t, int index, void *data);
+int insert_after(node_t *node, void *data);
 
 
 #endif /* LINKED_LIST_H */
