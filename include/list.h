@@ -21,8 +21,8 @@ typedef struct list {
     int size;
 } list_t;
 
-list_t* create_list(void);
-node_t* create_node(void *data);
+list_t *create_list(void);
+node_t *create_node(void *data);
 void free_list(list_t *list_t);
 void push_back(list_t *list_t, void *data);
 void push_front(list_t *list_t, void *data);

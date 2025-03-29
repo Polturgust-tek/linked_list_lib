@@ -13,7 +13,7 @@
  * @return A pointer to the newly created list, NULL if allocation fails.
  *         The list is initialized with size 0 and head set to NULL.
  */
-list_t* create_list(void)
+list_t *create_list(void)
 {
     list_t *list_t = malloc(sizeof(list_t));
 
