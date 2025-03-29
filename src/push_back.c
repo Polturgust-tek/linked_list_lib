@@ -20,9 +20,9 @@ void push_back(list_t *list_t, void *data)
 
     if (new_node == NULL)
         return;
-    if (current == NULL) {
+    if (current == NULL)
         list_t->head = new_node;
-    } else {
+    else {
         while (current->next != NULL) {
             current = current->next;
         }
